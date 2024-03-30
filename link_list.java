@@ -33,5 +33,6 @@ public class link_list {
             ptr = ptr.next;
         }
         System.out.println();
+        System.out.println();
     }
 }

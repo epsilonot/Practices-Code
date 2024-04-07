@@ -1,5 +1,6 @@
 #include <algorithm>
 #include<bits/stdc++.h>
+#include <numeric>
 using namespace std;
 int main(){
     int t,n;
@@ -11,8 +12,9 @@ int main(){
         int coun=0;
         for(int j=0;j<n;j++){
             cin>>arr[j];
-            sum=sum+arr[j];
+
         }
+        sum=accumulate(arr.begin(),arr.end(),0);
         if(sum%n==0){
             int result=sum/n;
             coun=count_if(arr.begin(),arr.end(),[result](int element)

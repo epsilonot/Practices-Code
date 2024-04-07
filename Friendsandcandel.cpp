@@ -14,7 +14,9 @@ int main(){
             cin>>arr[j];
 
         }
-        sum=accumulate(arr.begin(),arr.end(),0);
+        for_each(arr.begin(),arr.end() ,[&] (int i){
+            sum=sum+i;
+        } );
         if(sum%n==0){
             int result=sum/n;
             coun=count_if(arr.begin(),arr.end(),[result](int element)

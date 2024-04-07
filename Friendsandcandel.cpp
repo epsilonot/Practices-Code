@@ -1,7 +1,31 @@
+#include <algorithm>
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
     int t,n;
-    cin>>t>>n;
-    for
+    cin>>t;
+    for(int i=0;i<t;i++){
+        cin>>n;
+        vector<int>arr(n);
+        int sum=0;
+        int coun=0;
+        for(int j=0;j<n;j++){
+            cin>>arr[j];
+            sum=sum+arr[j];
+        }
+        if(sum%n==0){
+            int result=sum/n;
+            coun=count_if(arr.begin(),arr.end(),[result](int element)
+            {
+                return element>result;
+            }
+            );
+
+            cout<<coun<<"\n";
+        }
+        else
+            cout<<"-1"<<"\n";
+
+        arr.clear();
+    }
 }

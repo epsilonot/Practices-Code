@@ -4,6 +4,6 @@ int main(){
     string p,q;
     cout<<"P = ";
     cin >>p;
-    cout<<"\nT = ";
+    cout<<"T = ";
     cin >>q;
 }

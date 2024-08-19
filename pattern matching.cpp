@@ -6,4 +6,5 @@ int main(){
     cin >>p;
     cout<<"T = ";
     cin >>q;
+    cout<<p<<q<<"\n";
 }
